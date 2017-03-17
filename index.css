@@ -9,4 +9,12 @@ body{
     font-family: 'Kreon', serif;
     font-size: 75px;
     color: #fffee2;
+    text-shadow: 1px 1px 10px black;
+}
+.header-subtext{
+    /*font-family: 'Droid Sans', sans-serif;*/
+    font-family: 'Kreon', serif;
+    font-size: 40px;
+    color: #fffee2;
+    text-shadow: 1px 1px 10px black;
 }
