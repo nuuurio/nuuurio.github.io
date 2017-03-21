@@ -1,5 +1,5 @@
 body{
-    background-color: #1f242d !important;
+    background: linear-gradient(#19002b/*#210030*/, #210030 40%,/*#007584*/#003d44) !important;
 }
 .header{
     margin-top: 20px;
