@@ -1,6 +1,14 @@
 body{
     background: linear-gradient(#19002b/*#210030*/, #210030 40%,/*#007584*/#003d44) !important;
 }
+.general-container{
+    /*
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    */
+}
 .header{
     margin-top: 20px;
 }
@@ -15,6 +23,6 @@ body{
     /*font-family: 'Droid Sans', sans-serif;*/
     font-family: 'Kreon', serif;
     font-size: 40px;
-    color: #fffee2;
+    color: #fff5b2;
     text-shadow: 1px 1px 10px black;
 }
