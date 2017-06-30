@@ -2,15 +2,14 @@ body{
     background: linear-gradient(#19002b/*#210030*/, #210030 40%,/*#007584*/#003d44) !important;
 }
 .general-container{
-    /*
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    */
+    /*top: 0%;
+    left: 25%;
+    right: 25%;
+    transform: translate(-0%,-25%,-25%);*/
 }
 .header{
-    margin-top: 20px;
+    margin-top: 165px;
 }
 .header-text{
     /*font-family: 'Droid Sans', sans-serif;*/
