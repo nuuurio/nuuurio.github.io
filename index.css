@@ -24,4 +24,5 @@ body{
     font-size: 40px;
     color: #fff5b2;
     text-shadow: 1px 1px 10px black;
+    justify-content: space-around;
 }
