@@ -14,7 +14,7 @@ export function About() {
           <img
             src="/profile_photo.jpg"
             alt="Núria Balaguer"
-            className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-2xl shadow-lg"
+            className="w-64 h-128 md:w-80 md:h-80 object-cover rounded-2xl shadow-lg"
           />
         </div>
 

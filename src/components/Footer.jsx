@@ -11,7 +11,7 @@ export function Footer() {
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
       >
-        <p className="mb-4">Vols treballar junts? Envia'm un missatge!</p>
+        <p className="mb-4">Do you  want to work together? Send me a message!</p>
         <div className="flex justify-center gap-6 text-2xl mb-6">
           <a href="https://linkedin.com/nuuurio" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400">
             <FaLinkedin />
