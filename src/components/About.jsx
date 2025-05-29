@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { motion } from "framer-motion";
 
 export function About() {
@@ -9,10 +10,15 @@ export function About() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
-        <h2 className="text-4xl font-bold mb-6">Sobre mi</h2>
+        <h2 className="text-4xl font-bold mb-6">About me:</h2>
         <p className="text-lg leading-relaxed">
-          Sóc una UX Designer apassionada per entendre els usuaris i crear experiències digitals úniques. 
-          Experiència en user research, wireframes, prototips i test de usabilitat.
+          I am a creative, dynamic, and highly adaptable professional with a passion for generating innovative, 
+          out-of-the-box ideas. As a fast learner, I thrive in collaborative environments and enjoy connecting with 
+          people to drive meaningful interactions.
+
+          While I strive for structure in my day-to-day activities, my focus is always on achieving the objectives and 
+          goals I set for myself, ensuring high-quality results. My ability to balance creativity with practical 
+          problem-solving enables me to excel in dynamic and fast-paced environments.
         </p>
       </motion.div>
     </section>

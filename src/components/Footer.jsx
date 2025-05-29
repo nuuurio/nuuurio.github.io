@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { motion } from "framer-motion";
 import { FaLinkedin, FaDribbble, FaEnvelope } from "react-icons/fa";
 
@@ -12,17 +13,17 @@ export function Footer() {
       >
         <p className="mb-4">Vols treballar junts? Envia'm un missatge!</p>
         <div className="flex justify-center gap-6 text-2xl mb-6">
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400">
+          <a href="https://linkedin.com/nuuurio" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400">
             <FaLinkedin />
           </a>
-          <a href="https://dribbble.com" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400">
+          {/* <a href="https://dribbble.com" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400">
             <FaDribbble />
-          </a>
-          <a href="mailto:teuemail@example.com" className="hover:text-gray-400">
+          </a> */}
+          <a href="mailto:nuria174@hotmail.com" className="hover:text-gray-400">
             <FaEnvelope />
           </a>
         </div>
-        <p className="text-sm text-gray-400">&copy; {new Date().getFullYear()} Núria Balaguer. Tots els drets reservats.</p>
+        <p className="text-sm text-gray-400">&copy; {new Date().getFullYear()} Núria Balaguer. All rights reserved.</p>
       </motion.div>
     </footer>
   );

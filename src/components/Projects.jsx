@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { motion } from "framer-motion";
 
 export function Projects() {
@@ -11,9 +12,9 @@ export function Projects() {
         transition={{ duration: 0.6 }}
         className="max-w-6xl mx-auto"
       >
-        <h2 className="text-4xl font-bold text-center mb-12">Projectes</h2>
+        <h2 className="text-4xl font-bold text-center mb-12">Projects</h2>
         {projects.length === 0 ? (
-          <p className="text-center text-gray-500">Encara no hi ha projectes. Torna aviat!</p>
+          <p className="text-center text-gray-500">There are no projects yet. Come back soon!</p>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
             {projects.map((project, index) => (
