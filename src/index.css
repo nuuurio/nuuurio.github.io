@@ -1,6 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Asap+Condensed:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Space+Grotesk:wght@300..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Space+Grotesk:wght@300..700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@theme {
+  --font-abril-fatface: "Abril Fatface", serif;
+  --font-asap-condensed: "Asap Condensed", sans-serif;
+  --color-navy-50: #E7E9EE;
+  --color-navy-100: #D1D5DD;
+  --color-navy-200: #A3ABBC;
+  --color-navy-300: #75819A;
+  --color-navy-400: #4C5877;
+  --color-navy-500: #2F3C58;
+  --color-navy-600: #253045;
+  --color-navy-700: #1C2434;
+  --color-navy-800: #121822;
+  --color-navy-900: #090C11;
+  --color-rose-600: #A64C68;
+  --color-rose: #C27C88;
+  --color-gray: #9CA8B8;
+  --color-white-soft: #F6F7F9;
+  --color-teal: #5E9CA0;
+  --color-lavender: #A0A7D1;
+  --color-mint: #B3E1DC;
+  --color-periwinkle: #BCC6EB;
+  --color-cornflower: #6495ED;
+  --color-pinkpastel: #F4C2C2;
+  --color-pastelblue: #A7CCF9;
+  --color-pastelyellow: #FADDA7;
+  --color-sand: #F5F4E4;
+  --color-saffron: #FBB963;
+  --color-coral: #F45673;
+  --color-plum: #65556F;
+  --color-cyan-50: #E8FAF9;
+  --color-cyan-100: #D1F5F3;
+  --color-cyan-200: #AEEBE8;
+  --color-cyan-300: #89E0DC;
+  --color-cyan- 400: #67D6D1;
+  --color-cyan-500: #51CDC8;
+  --color-cyan-600: #3BB5B1;
+  --color-cyan-700: #2FAEAA;
+  --color-cyan-800: #1C8B88;
+  --color-cyan-900: #0E6A68;
+}
 
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -20,11 +63,7 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
   text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
 }
 
 body {
@@ -37,12 +76,12 @@ body {
   min-height: 100vh;
 }
 
-h1 {
+/* h1 {
   font-size: 3.2em;
   line-height: 1.1;
-}
+} */
 
-button {
+/* button {
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
@@ -52,24 +91,21 @@ button {
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
-}
-button:hover {
+} */
+/* button:hover {
   border-color: #646cff;
-}
-button:focus,
+} */
+/* button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
+} */
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
+    /* color: #213547; */
+    /* background-color: #ffffff; */
   }
   button {
-    background-color: #f9f9f9;
+    /* background-color: #f9f9f9; */
   }
 }

@@ -15,7 +15,7 @@ export function Skills() {
         <h2 className="text-4xl font-bold mb-8">Skills</h2>
         <div className="flex flex-wrap justify-center gap-4">
           {skills.map((skill, index) => (
-            <span key={index} className="bg-gray-200 text-gray-700 px-4 py-2 rounded-full text-sm">
+            <span key={index} className="bg-saffron text-plum px-4 py-2 rounded-full lg:text-sm xl:text-lg">
               {skill}
             </span>
           ))}

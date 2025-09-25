@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export function About() {
   return (
-    <section id="about" className="py-20 px-8 bg-gray-100">
+    <section id="about" className="py-20 px-8 bg-sand">
       <motion.div
         className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
         initial={{ opacity: 0, y: 30 }}
@@ -19,8 +19,8 @@ export function About() {
         </div>
 
         <div>
-          <h2 className="text-4xl font-bold mb-6 text-center md:text-left">About me:</h2>
-          <p className="text-lg leading-relaxed text-gray-800">
+          <h2 className="lg:text-4xl xl:text-5xl 2xl:text-6xl font-abril-fatface font-bold mb-6 text-center md:text-left text-plum">About me:</h2>
+          <p className="lg:text-lg xl:text-xl 2xl:text-2xl leading-relaxed text-plum/80 font-asap-condensed">
             Hi! I'm <strong>Núria Balaguer</strong>, a passionate <strong>UX/UI Designer</strong> dedicated to crafting
             thoughtful, intuitive, and emotionally engaging digital experiences.
             <br /><br />

@@ -5,14 +5,14 @@ export function Projects() {
   const projects = []; // De moment buit!
 
   return (
-    <section id="projects" className="py-20 px-8 bg-white">
+    <section id="projects" className="py-20 px-8 bg-saffron">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         className="max-w-6xl mx-auto"
       >
-        <h2 className="text-4xl font-bold text-center mb-12">Projects</h2>
+        <h2 className="font-abril-fatface text-4xl font-bold text-center mb-12 text-plum">Projects</h2>
         {projects.length === 0 ? (
           <p className="text-center text-gray-500">There are no projects yet. Come back soon!</p>
         ) : (
