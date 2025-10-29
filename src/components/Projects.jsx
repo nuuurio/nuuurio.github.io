@@ -1,15 +1,9 @@
 /* eslint-disable no-unused-vars */
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+import { projects } from "../data/projects";
 
 export function Projects() {
-  const projects = [
-    {
-      title: "Airline App",
-      imageUrl: "link",
-      description: "This is the description of the project"
-    }
-  ];
-
   return (
     <section id="projects" className="py-20 px-8 bg-sand">
       <motion.div
@@ -24,13 +18,15 @@ export function Projects() {
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
             {projects.map((project, index) => (
-              <div key={index} className="rounded-lg overflow-hidden shadow-lg bg-white">
-                <img src={project.imageUrl} alt={project.title} className="w-full" />
-                <div className="p-6">
-                  <h3 className="text-2xl font-abril-fatface mb-2 text-plum">{project.title}</h3>
-                  <p className="lg:text-lg text-plum">{project.description}</p>
+              <Link to={`/projects/${project.slug}`}>
+                <div key={index} className="rounded-lg overflow-hidden shadow-lg bg-white">
+                  <img src={project.imageUrl} alt={project.title} className="w-full h-64 object-cover" loading="lazy" />
+                  <div className="p-6">
+                    <h3 className="text-2xl font-abril-fatface mb-2 text-plum">{project.title}</h3>
+                    <p className="lg:text-lg text-plum">{project.thumbnail}</p>
+                  </div>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         )}

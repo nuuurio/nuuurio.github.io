@@ -19,7 +19,7 @@ function downloadFile(url, filename = "cv.pdf") {
 
 export function Hero() {
   return (
-    <section className="h-screen flex flex-col justify-center items-center text-left bg-sand">
+    <section id="home" className="h-screen flex flex-col justify-center items-center text-left bg-sand">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
