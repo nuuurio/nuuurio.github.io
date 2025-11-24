@@ -3,7 +3,21 @@ import { Client } from "@notionhq/client";
 const notion = new Client({ auth: process.env.NOTION_KEY });
 const databaseId = process.env.NOTION_PAGE_ID;
 
+const CORS_HEADERS = {
+  "Access-Control-Allow-Origin": "https://nuuurio.github.io",
+  "Access-Control-Allow-Methods": "GET, OPTIONS",
+  "Access-Control-Allow-Headers": "Content-Type",
+};
+
 export const handler = async (event, context) => {
+    if (event.httpMethod === "OPTIONS") {
+    return {
+      statusCode: 204,
+      headers: CORS_HEADERS,
+      body: "",
+    };
+  }
+
   try {
     const resp = await notion.databases.retrieve({
       database_id: databaseId,
@@ -31,13 +45,17 @@ export const handler = async (event, context) => {
 
     return {
       statusCode: 200,
-      headers: { "content-type": "application/json" },
+      headers: { 
+        "content-type": "application/json",
+        ...CORS_HEADERS,
+    },
       body: JSON.stringify({ projects }),
     };
   } catch (error) {
     console.error("Notion error:", error);
     return {
       statusCode: 500,
+      headers: CORS_HEADERS,
       body: JSON.stringify({ error: "Error fetching Notion data" }),
     };
   }
