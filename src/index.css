@@ -60,10 +60,11 @@
   --container-6xl: 100%;
 }
 
+html { scroll-behavior: smooth; }
+
 
 a {
   font-weight: 500;
-  text-decoration: inherit;
 }
 
 body {

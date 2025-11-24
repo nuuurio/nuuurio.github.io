@@ -13,9 +13,10 @@
     "deploy": "gh-pages -d docs"
   },
   "dependencies": {
+    "@notionhq/client": "^5.4.0",
     "@tailwindcss/vite": "^4.1.5",
     "clsx": "^2.1.1",
-    "framer-motion": "^12.10.0",
+    "framer-motion": "^12.23.24",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-icons": "^5.5.0",
