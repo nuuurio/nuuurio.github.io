@@ -1,8 +1,10 @@
-const NETLIFY_BASE_URL = "https://wondrous-crisp-f58655.netlify.app";
+const NETLIFY_SITE = "https://wondrous-crisp-f58655.netlify.app";
+
+const API_BASE = import.meta.env.DEV ? "" : NETLIFY_SITE;
 
 export async function fetchProjects() {
   // const res = await fetch(`${NETLIFY_BASE_URL}/.netlify/functions/get-projects`);
-  const res = await fetch(`../.netlify/functions/get-projects`);
+  const res = await fetch(`${API_BASE}/.netlify/functions/get-projects`);
   const data = await res.json();
 
   const pages = data.projects || [];
