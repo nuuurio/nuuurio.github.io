@@ -29,8 +29,11 @@ export function Hero() {
         <p className="font-asap-condensed text-plum/70 2xl:text-5xl lg:text-2xl mb-6">Because knowing how things are built makes designing them smarter, faster, and more human.</p>
         <p className="font-asap-condensed text-plum/70 2xl:text-4xl lg:text-2xl mb-6">I’m <strong>Núria</strong> — nice to meet you!</p>
         <div className="flex justify-self-center mt-10">
-          <Button variant="primary" href="#projects" className="mx-4">View projects</Button>
-          <Button variant="secondary" onClick={() => downloadFile(`${import.meta.env.BASE_URL}cv.pdf`)} className="mx-4">Download CV</Button>
+          <Button variant="primary" className="mx-4" onClick={() => {
+              const el = document.getElementById("projects");
+              if (el) el.scrollIntoView({ behavior: "smooth" });
+              }}>View projects</Button>
+          <Button variant="secondary" onClick={() => downloadFile(`${import.meta.env.BASE_URL}Nuria_Balaguer_CV.pdf`)} className="mx-4">Download CV</Button>
         </div>
       </motion.div>
     </section>

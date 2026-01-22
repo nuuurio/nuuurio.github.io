@@ -22,9 +22,18 @@ export function Projects() {
         className="max-w-6xl mx-auto"
       >
         <h2 className="font-abril-fatface text-4xl font-bold text-center mb-12 text-sand">Projects</h2>
-        {projects.length === 0 ? (
-          <p className="text-center text-gray-500">There are no projects yet. Come back soon!</p>
-        ) : (
+        {projects === null && (
+          <div className="text-center text-plum/60 mt-10 font-asap-condensed">
+            <div className="mx-auto w-8 h-8 border-2 border-plum/30 border-t-brand rounded-full animate-spin mb-4"></div>
+            <p>Loading your projects…</p>
+          </div>
+        )}
+        {projects?.length === 0 && (
+          <p className="text-center text-gray-500">
+            There are no projects yet. Come back soon!
+          </p>
+        )}
+        {projects && projects.length > 0 && (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
             {projects.map((project, index) => (
               <Link to={`/projects/${project.slug}`}>
